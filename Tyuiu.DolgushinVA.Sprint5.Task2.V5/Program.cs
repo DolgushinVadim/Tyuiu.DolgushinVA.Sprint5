@@ -64,10 +64,17 @@ namespace Tyuiu.DolgushinVA.Sprint5.Task2.V5
                     if (matrix[i, j] % 2 != 0)
                     {
                         matrix[i, j] = 0;
+                        Console.Write($"{matrix[i, j]} \t");
                     }
-                    Console.Write($"{matrix[i, j]} \t");
+                    else
+                    {
+                        Console.Write($"{matrix[i, j]} \t");
+                    }
                 }
+                Console.WriteLine();
             }
+
+            Console.WriteLine("***************************************************************************");
 
             Console.WriteLine("Фaйл: " + res);
             Console.WriteLine("Coздан!");
