@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.DolgushinVA.Sprint5.Task0.V4.Lib;
-namespace Tyuiu.DolgushinVA.Sprint5.Task0.V4
+using Tyuiu.DolgushinVA.Sprint5.Task3.V24.Lib;
+namespace Tyuiu.DolgushinVA.Sprint5.Task3.V24
 {
     class Program
     {
@@ -27,14 +27,14 @@ namespace Tyuiu.DolgushinVA.Sprint5.Task0.V4
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 2;
+            int x = 3;
             Console.WriteLine("x = " + x);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double y = 2 * Math.Pow(x, 3) + 0.5 * Math.Pow(x, 2) - 3.5 * x + 2;
+            double y = 6.1 * Math.Pow(x, 3) + 0.23 * Math.Pow(x, 2) + 1.04 * x;
             y = Math.Round(y, 3);
             Console.WriteLine("Ответ: " + y);
 
