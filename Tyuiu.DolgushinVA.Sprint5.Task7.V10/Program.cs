@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.DolgushinVA.Sprint5.Task5.V19.Lib;
-namespace Tyuiu.DolgushinVA.Sprint5.Task5.V19
+using System.IO;
+using Tyuiu.DolgushinVA.Sprint5.Task7.V10.Lib;
+namespace Tyuiu.DolgushinVA.Sprint5.Task7.V10
 {
     class Program
     {
@@ -15,20 +16,20 @@ namespace Tyuiu.DolgushinVA.Sprint5.Task5.V19
             Console.Title = "Спринт #5 | Выполнил: Долгушин В. А. | ИИПб-23-3";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #19                                                             *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #10                                                             *");
             Console.WriteLine("* Выполнил: Долгушин Вадим Алексеевич | ИИПб-23-3                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая берёт набор значение из                     *");
-            Console.WriteLine("* InPutDataFileTask5V19.txt и находит разницу между максимальным и        *");
-            Console.WriteLine("* минимальным однозначными целыми числами в файле. Результат вывести на   *");
-            Console.WriteLine("* консоль.                                                                *");
+            Console.WriteLine("* Написать программу, которая берёт набор символьных данных из            *");
+            Console.WriteLine("* InPutDataFileTask7V10.txt и заменяет все заглавные латинские буквы на   *");
+            Console.WriteLine("* строчные. Результат сохранить в файл OutPutDataFileTask7V10.txt.        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = @"C:\DataSprint5\InPutDataFileTask5V19.txt";
+            string path = @"C:\DataSprint5\InPutDataFileTask7V10.txt";
+            string pathSaveFile = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask7.txt";
             Console.WriteLine("Данные находятся в файле: " + path);
 
 
@@ -36,8 +37,8 @@ namespace Tyuiu.DolgushinVA.Sprint5.Task5.V19
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double res = ds.LoadFromDataFile(path);
-            Console.WriteLine("Разность максимального и минимального однозначных целых чисел в файле = " + res);
+            pathSaveFile = ds.LoadDataAndSave(path);
+            Console.WriteLine("Результат находится в файле: " + pathSaveFile);
             Console.ReadKey();
         }
     }

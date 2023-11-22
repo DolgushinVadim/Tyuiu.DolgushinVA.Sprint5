@@ -21,14 +21,14 @@ namespace Tyuiu.DolgushinVA.Sprint5.Task4.V1
             Console.WriteLine("* Выполнил: Долгушин Вадим Алексеевич | ИИПб-23-3                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая берёт значение из InPutDataFileTask4V0.txt  *");
+            Console.WriteLine("* Написать программу, которая берёт значение из InPutDataFileTask4V1.txt  *");
             Console.WriteLine("* и подставляет вместо Х в формулу. Результат вывести на консоль.         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
             string path = @"C:\DataSprint5\InPutDataFileTask4V1.txt";
-            Console.WriteLine("Данные находятся в файле:" + path);
+            Console.WriteLine("Данные находятся в файле: " + path);
             
 
             Console.WriteLine("***************************************************************************");
